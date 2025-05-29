@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículo – Seu Nome</title>
   <style>
     body {
@@ -29,7 +28,7 @@
       font-size: 0.9rem;
       color: #555;
     }
-    .section {
+    section {
       margin-bottom: 2rem;
     }
   </style>
@@ -45,40 +44,45 @@
     </p>
   </header>
 
-  <div class="section">
+  <section>
     <h2>Objetivo</h2>
     <p>Estágio em Desenvolvimento de Software, com foco em backend Java e modelagem de dados.</p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Resumo</h2>
     <p>Estudante de Análise e Desenvolvimento de Sistemas na FATEC Senac. Em busca de oportunidades para aplicar conhecimentos em Java, modelagem de dados e desenvolvimento de sistemas. Proativa, com facilidade de aprendizado e interesse por tecnologia acessível e inclusiva.</p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Formação Acadêmica</h2>
-    <p>Curso de Análise e Desenvolvimento de Sistemas – Senac Florianópolis<br>
-    Início: março/2025 – Previsão de conclusão: dezembro/2026</p>
-  </div>
+    <ul>
+      <li>Curso de Análise e Desenvolvimento de Sistemas – Senac Florianópolis</li>
+      <li>Início: março/2025 – Previsão de conclusão: dezembro/2026</li>
+    </ul>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Habilidades Técnicas</h2>
     <ul>
-      <li>Lógica de programação (Java)</li>
-      <li>Modelagem de dados relacionais</li>
-      <li>SQL (MySQL)</li>
+      <li>Java (nível iniciante)</li>
+      <li>SQL básico</li>
+      <li>HTML, CSS</li>
       <li>Git e GitHub</li>
-      <li>Estruturas de repetição e condicionais</li>
-      <li>Arrays e matrizes</li>
-      <li>Metodologia científica</li>
-      <li>Engenharia de requisitos (nível iniciante)</li>
-      <li>Criação de wireframes</li>
+      <li>Modelagem de Dados</li>
+      <li>Engenharia de Requisitos</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Projetos Acadêmicos</h2>
-    <p><strong>OrganizaExames</strong> – Protótipo de aplicativo gratuito para armazenamento de exames médicos, voltado para adultos de meia-idade e idosos.</p>
-  </div>
+  <section>
+    <h2>Competências Comportamentais</h2>
+    <ul>
+      <li>Proatividade</li>
+      <li>Organização</li>
+      <li>Trabalho em equipe</li>
+      <li>Interesse por tecnologia acessível</li>
+    </ul>
+  </section>
 </body>
 </html>
+

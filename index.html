@@ -1,90 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Currículo – Seu Nome</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículo | OFUSKA</title>
+  <meta name="description" content="Currículo online e portfólio (HTML/CSS)." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #2cae50;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    header {
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-    }
-    .contact {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    section {
-      margin-bottom: 2rem;
+    :root { --bg:#0f1115; --card:#151a22; --txt:#e7eaf0; --muted:#aab2c0; --accent:#7aa2ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--txt); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 16px 56px; }
+    header { display:flex; gap:16px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap; }
+    .title h1 { margin:0; font-size: 28px; letter-spacing: .2px; }
+    .title p { margin:6px 0 0; color: var(--muted); line-height: 1.5; }
+    .badge { display:inline-block; margin-top:10px; padding:6px 10px; border:1px solid #2a3242; border-radius: 999px; color: var(--muted); font-size: 13px; }
+    .grid { display:grid; grid-template-columns: 1.2fr .8fr; gap: 16px; margin-top: 18px; }
+    @media (max-width: 860px){ .grid{ grid-template-columns:1fr; } }
+    section { background: var(--card); border: 1px solid #232c3d; border-radius: 14px; padding: 16px; }
+    section h2 { margin:0 0 10px; font-size: 16px; }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    li { margin: 6px 0; color: var(--txt); }
+    .muted { color: var(--muted); }
+    .row { display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
+    .pill { padding:6px 10px; border:1px solid #2a3242; border-radius:999px; font-size: 13px; color: var(--muted); }
+    .item { margin-top: 10px; }
+    .item strong { display:block; }
+    .item span { color: var(--muted); font-size: 13px; }
+    footer { margin-top: 18px; color: var(--muted); font-size: 13px; text-align:center; }
+    @media print {
+      body { background:#fff; color:#111; }
+      section { border: 1px solid #ddd; }
+      a { color:#111; text-decoration: underline; }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Seu Nome Completo</h1>
-    <p class="contact">
-      Email: seuemail@exemplo.com |
-      GitHub: <a href="https://github.com/seuusuario">seuusuario</a> |
-      LinkedIn: <a href="https://linkedin.com/in/seuperfil">seuperfil</a> <br>
-      Florianópolis – SC
-    </p>
-  </header>
+  <main class="wrap">
+    <header>
+      <div class="title">
+        <h1>OFUSKA</h1>
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas (ADS). Interesses: desenvolvimento, UX/UI e projetos de portfólio.
+        </p>
+        <div class="badge">Portfólio em construção</div>
+      </div>
 
-  <section>
-    <h2>Objetivo</h2>
-    <p>Estágio em Desenvolvimento de Software, com foco em backend Java e modelagem de dados.</p>
-  </section>
+      <div>
+        <div class="muted">Contato (preferência por privacidade)</div>
+        <div class="row">
+          <a class="pill" href="https://github.com/OFUSKA" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="pill" href="COLE_AQUI_SEU_LINK_DO_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </header>
 
-  <section>
-    <h2>Formação</h2>
-    <p><strong>Análise e Desenvolvimento de Sistemas</strong> – Faculdade Senac Florianópolis (em andamento)</p>
-  </section>
+    <div class="grid">
+      <section>
+        <h2>Resumo</h2>
+        <p class="muted">
+          Escreva aqui 3–5 linhas objetivas: o que você está estudando, que tipo de vaga busca (estágio/trainee),
+          e quais tecnologias/áreas quer aprofundar.
+        </p>
 
-  <section>
-    <h2>Conhecimentos</h2>
-    <ul>
-      <li>Java (básico)</li>
-      <li>Lógica de programação</li>
-      <li>Modelagem de dados</li>
-      <li>SQL</li>
-      <li>HTML e CSS</li>
-      <li>Git e GitHub</li>
-    </ul>
-  </section>
+        <h2 style="margin-top:14px;">Projetos</h2>
+        <div class="item">
+          <strong>Currículo Online</strong>
+          <span>HTML/CSS • Git/GitHub</span>
+          <ul>
+            <li>Versão online do currículo para portfólio.</li>
+            <li>Organização do repositório e rotina de commits.</li>
+          </ul>
+        </div>
 
-  <section>
-    <h2>Informações adicionais</h2>
-    <ul>
-      <li>Disponibilidade para estagiar à tarde</li>
-      <li>Facilidade para aprender e trabalhar em equipe</li>
-    </ul>
-  </section>
+        <div class="item">
+          <strong>Double Video (protótipo)</strong>
+          <span>Figma • UX/UI</span>
+          <ul>
+            <li>Protótipo de plataforma com foco em curadoria e comunidade.</li>
+            <li>Fluxos, componentes e consistência visual.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Competências</h2>
+        <div class="row">
+          <div class="pill">Git/GitHub</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">VS Code</div>
+          <div class="pill">Figma</div>
+          <div class="pill">Lógica de Programação</div>
+        </div>
+
+        <h2 style="margin-top:14px;">Formação</h2>
+        <div class="item">
+          <strong>ADS — Senac</strong>
+          <span class="muted">Em andamento</span>
+        </div>
+
+        <h2 style="margin-top:14px;">Experiência</h2>
+        <div class="item">
+          <strong>Experiência anterior (resumo)</strong>
+          <span class="muted">Adicione 2–3 pontos com resultados e responsabilidades</span>
+          <ul>
+            <li>Atendimento/gestão/rotinas (exemplo).</li>
+            <li>Implantação/apoio a sistemas (exemplo).</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      Atualize este currículo conforme seus projetos evoluírem.
+    </footer>
+  </main>
 </body>
 </html>
-<section>
-  <h2>Projetos</h2>
-  <ul>
-    <li>
-      <strong>Currículo Online</strong> – Página desenvolvida com HTML e CSS para exibir currículo de forma responsiva. <br>
-      <a href="https://ofuska.github.io/curriculo-online" target="_blank">Ver projeto</a>
-    </li>
-    <li>
-      <strong>App de Organização de Exames</strong> – Protótipo de app para ajudar adultos e idosos a armazenarem exames médicos de forma segura. <br>
-      <em>Em desenvolvimento - projeto acadêmico de Engenharia de Requisitos</em>
-    </li>
-  </ul>
-</section>
